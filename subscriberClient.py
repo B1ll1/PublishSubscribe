@@ -6,16 +6,16 @@ if len(sys.argv) > 1:
     port = sys.argv[1]
     int(port)
     
-# Socket to talk to server
+# Socket conecta com o servidor
 context = zmq.Context()
 socket = context.socket(zmq.SUB)
 
-res = raw_input('Qual o endereço do servidor? ')
+res = raw_input('Qual o endereÃ§o do servidor? ')
 
 print "Coletando dados do servidor..."
 socket.connect (res)
 
-# Inscrição nos filtros desejados
+# InscriÃ§Ã£o nos filtros desejados
 topicSegmento = 'filtro1'
 topicProduto = 'produto1'
 topicValor = '10001'
@@ -23,7 +23,7 @@ socket.setsockopt(zmq.SUBSCRIBE, topicSegmento)
 socket.setsockopt(zmq.SUBSCRIBE, topicProduto)
 socket.setsockopt(zmq.SUBSCRIBE, topicValor)
 
-# Processa até 10 topicos
+# Processa atÃ© 10 topicos
 total_value = 0
 for update_nbr in range (10):
     string = socket.recv()
