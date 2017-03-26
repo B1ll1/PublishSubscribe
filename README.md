@@ -1,6 +1,6 @@
 # PublishSubscribe
 
-Link do projeto no GitHub: 
+Link do projeto no GitHub: https://github.com/B1ll1/PublishSubscribe
 
 Windows:
 
@@ -9,19 +9,19 @@ Passo 1 - Download do python: https://www.python.org/downloads/release/python-27
 Passo 2 - Acessar a pasta C:\Python27\Scripts e executar o comando pip install pyzmq
 
 Passo 3 - instalar ngrok
-Baixe o executável para seu windows em https://ngrok.com/download depois extraia em uma pasta que se lembre qual é
+Baixe o executÃ¡vel para seu windows em https://ngrok.com/download depois extraia em uma pasta que se lembre qual Ã©
 
 Passo 4 - subir o servidor
 clique com o botal direito no arquivo publishServer.py e escolha Edit with IDLE
 clique na aba Run > Run Module
 
 Passo 5 - abrir a porta local com o ngrok
-clique duas vezes no executavel do ngrok e rode o comando ngrok tcp 5556, é a porta que o servidor usa
+clique duas vezes no executavel do ngrok e rode o comando ngrok tcp 5556, Ã© a porta que o servidor usa
 
 Passo 6 - rodar o client
 clique com o botao direito no arquivo subscriberClient.py e escolha Edit with IDLE
 clique na aba Run > Run Module
-entre com o enderço que o ngrok gerou ao abrir a porta
+entre com o enderÃ§o que o ngrok gerou ao abrir a porta
 aguarde as respostas do servidor
 
 Ubuntu:
@@ -41,20 +41,20 @@ Passo 3 - instalar pyzmq
 
 sudo apt-get install python-zmq
 
-Caso não funcione tente
+Caso nÃ£o funcione tente
 sudo pip install pyzmq
 
 Passo 4 - instalar ngrok
-Baixe o ngrok de https://ngrok.com/download e depois extraia na pasta /usr/local/bin, feito isso crie uma conta no site do ngrok e pegue sua authtoken daí 
+Baixe o ngrok de https://ngrok.com/download e depois extraia na pasta /usr/local/bin, feito isso crie uma conta no site do ngrok e pegue sua authtoken daÃ­ 
 rode o comando ngrok authtoken 'seu token' no terminal
 
 Passo 5 - subir o servidor
 python publisherServer.py
 
 Passo 6 - abrir a porta local com o ngrok 
-rode o comando ngrok tcp 5556, é a porta que o servidor usa
+rode o comando ngrok tcp 5556, Ã© a porta que o servidor usa
  
 Passo 7 - rodar o client
 python subscriberClient.py
-entre com o endereço que o ngrok retornar para você no terminal
+entre com o endereÃ§o que o ngrok retornar para vocÃª no terminal
 aguarde as respostas do servidor
